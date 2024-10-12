@@ -1,0 +1,9 @@
+{
+    "C": 10,
+    "class_weight": "balanced",
+    "coef0": 0,
+    "degree": 3,
+    "gamma": "scale",
+    "kernel": "poly",
+    "shrinking": false
+}
