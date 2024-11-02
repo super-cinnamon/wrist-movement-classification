@@ -76,10 +76,10 @@ decision_tree_param_grid = {
 
 random_forest_param_grid = {
     'criterion': ['gini', 'entropy', 'log_loss'],
-    'max_depth': [None, 3, 5, 6, 7, 8],
-    'min_samples_split': [2, 4, 5, 7, 8],
+    'max_depth': [3, 5, 6, 7],
+    'min_samples_split': [2, 3, 5],
     'min_samples_leaf': [1, 2, 5, 7],
-    'min_weight_fraction_leaf': [0.01, 0.03, 0.05],
+    'min_weight_fraction_leaf': [0.01, 0.03, 0.05], 
     'max_features': [None, 'sqrt', 'log2'],
     'class_weight': [None, 'balanced'],
     'n_estimators': [20, 50, 100, 150, 200],
@@ -88,11 +88,11 @@ random_forest_param_grid = {
 }
 
 xgboost_param_grid = {
-    'learning_rate': [0.01, 0.05, 0.1, 0.2],
-    'n_estimators': [50, 100, 150, 200, 300],
+    'learning_rate': [0.001, 0.01, 0.1],
+    'n_estimators': [50, 100, 150, 200],
     'min_child_weight': [1, 2, 3, 4],
     'gamma': [0, 0.1, 0.2, 0.3],
-    'max_depth': [3, 4, 5, 6, 7],
+    'max_depth': [4, 5, 6, 7],
     'subsample': [0.8, 0.9, 1.0],
     'colsample_bytree': [0.8, 0.9, 1.0],
     'scale_pos_weight': [1, 2, 3, 4],
@@ -106,7 +106,7 @@ mlp_param_grid = {
     "optimizer": ['adam', 'rmsprop', 'sgd'],
     "batch_size": [4, 8, 16, 32],
     "regularization": [0.0001, 0.001, 0.01],
-    "epochs": [5, 10, 20, 30, 50, 80, 100],
+    "epochs": [20, 50, 100, 150, 200],
     "lr": [0.001, 0.01, 0.1],
     "loss": ['mse', 'hinge', 'log']
 }
