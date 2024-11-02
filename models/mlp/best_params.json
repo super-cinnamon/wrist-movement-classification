@@ -1,0 +1,10 @@
+{
+    "hidden_size": 4,
+    "activation": "relu",
+    "optimizer": "adam",
+    "batch_size": 4,
+    "regularization": 0.001,
+    "epochs": 50,
+    "learning_rate": 0.01,
+    "loss": "mse"
+}
