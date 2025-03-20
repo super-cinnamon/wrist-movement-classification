@@ -1,0 +1,17 @@
+hidden_size,activation,optimizer,batch_size,regularization,epochs,learning_rate,loss,best_f1
+4,relu,adam,4,0.001,5,0.001,mse,64.51612903225806
+4,relu,adam,4,0.001,10,0.001,mse,72.72727272727273
+4,relu,adam,8,0.001,5,0.001,mse,74.4186046511628
+4,relu,adam,8,0.001,10,0.001,mse,78.04878048780488
+4,leaky_relu,adam,4,0.001,5,0.001,mse,74.4186046511628
+4,leaky_relu,adam,4,0.001,10,0.001,mse,76.92307692307693
+4,leaky_relu,adam,8,0.001,5,0.001,mse,72.72727272727273
+4,leaky_relu,adam,8,0.001,10,0.001,mse,69.76744186046511
+8,relu,adam,4,0.001,5,0.001,mse,86.66666666666667
+8,relu,adam,4,0.001,10,0.001,mse,83.87096774193549
+8,relu,adam,8,0.001,5,0.001,mse,82.05128205128204
+8,relu,adam,8,0.001,10,0.001,mse,73.68421052631578
+8,leaky_relu,adam,4,0.001,5,0.001,mse,82.35294117647058
+8,leaky_relu,adam,4,0.001,10,0.001,mse,81.08108108108108
+8,leaky_relu,adam,8,0.001,5,0.001,mse,76.92307692307693
+8,leaky_relu,adam,8,0.001,10,0.001,mse,87.5
