@@ -153,6 +153,8 @@ def get_best_params():
             grid_search = GridSearchCV(model, param_grids[i], cv=5, scoring='f1')   # noqa
             grid_search.fit(X_train, y_train)
             best_params = grid_search.best_params_
+            # print best params
+            logging.info(f"Best params for {model_path}: {best_params}")
 
         # save best model and hyperparametrs into files
         if not os.path.exists(os.path.join(MODELS_PATH, model_path)):
